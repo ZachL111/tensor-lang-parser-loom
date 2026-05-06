@@ -1,0 +1,73 @@
+{
+  "repo": "tensor-lang-parser-loom",
+  "language": "Julia",
+  "category": "Compilers",
+  "goal": "Create a Julia reference implementation for parser workflows, centered on diagnostic reporting, negative fixtures, and human-readable error snapshots.",
+  "review_model": {
+    "terms": [
+      "IR pressure",
+      "lowering drift",
+      "stack depth",
+      "diagnostic reach"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "IR pressure",
+      "signal": 49,
+      "slack": 41,
+      "drag": 8,
+      "confidence": 82,
+      "score": 197,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "lowering drift",
+      "signal": 64,
+      "slack": 23,
+      "drag": 32,
+      "confidence": 54,
+      "score": 109,
+      "lane": "watch"
+    },
+    {
+      "name": "edge",
+      "focus": "stack depth",
+      "signal": 79,
+      "slack": 48,
+      "drag": 10,
+      "confidence": 72,
+      "score": 248,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "diagnostic reach",
+      "signal": 68,
+      "slack": 45,
+      "drag": 8,
+      "confidence": 51,
+      "score": 208,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "IR pressure",
+      "signal": 90,
+      "slack": 54,
+      "drag": 25,
+      "confidence": 46,
+      "score": 205,
+      "lane": "ship"
+    }
+  ]
+}
