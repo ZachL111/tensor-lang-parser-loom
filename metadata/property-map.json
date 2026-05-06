@@ -1,0 +1,28 @@
+{
+  "repo": "tensor-lang-parser-loom",
+  "language": "Julia",
+  "category": "Compilers",
+  "goal": "Create a Julia reference implementation for parser workflows, centered on diagnostic reporting, negative fixtures, and human-readable error snapshots.",
+  "weights": {
+    "signal": 4,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 3
+  },
+  "thresholds": {
+    "ship": 180,
+    "watch": 96
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}

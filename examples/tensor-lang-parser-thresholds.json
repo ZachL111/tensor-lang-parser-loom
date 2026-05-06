@@ -1,0 +1,17 @@
+{
+  "repo": "tensor-lang-parser-loom",
+  "thresholds": {
+    "signal": 4,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 3,
+    "ship": 180,
+    "watch": 96
+  },
+  "terms": [
+    "IR pressure",
+    "lowering drift",
+    "stack depth",
+    "diagnostic reach"
+  ]
+}
